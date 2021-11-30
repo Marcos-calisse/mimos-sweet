@@ -7,7 +7,7 @@
 /* MEDIDAS */
 body {
   font-family: 'Roboto Mono', monospace;
-  background-color: #8AC3B8; }
+  background-color: #fdcbd3; }
 
 /*Seccion Index*/
 .imagenLogo {
@@ -115,7 +115,6 @@ ul li:hover ul {
 
 @media only screen and (max-width: 320px) {
   .contendedorGeneral {
-    background-color: #a78559;
     height: auto;
     grid-template-columns: 8fr;
     grid-template-rows: 400px 200px;

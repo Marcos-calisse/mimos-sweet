@@ -13,7 +13,7 @@
 }
 body{
     font-family: 'Roboto Mono', monospace;
-    background-color: $colorBackgroundCuaternario;
+    background-color: $colorBackgroundPrincipal;
 }
 
 
@@ -156,7 +156,7 @@ ul li:hover ul{
 
 @media only screen and (max-width: 320px){
     .contendedorGeneral{
-        background-color: rgb(167, 133, 89);
+
         height: auto;
         grid-template-columns: 8fr;
         grid-template-rows: 400px 200px;
@@ -574,7 +574,7 @@ ul li:hover ul{
         "contenidoSeccionProductos"
         "contenidoSeccionProductos"
         "footerSeccionProductos";
-        background-color: #8AC3B8;
+        background-color: $colorBackgroundCuaternario;
     }
     .headerSeccionProductos nav{
         display: flex;
