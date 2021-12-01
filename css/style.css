@@ -113,14 +113,28 @@ ul li:hover ul {
   grid-row-gap: 3px;
   grid-template-areas: "section__botonesProductos main__imagenesEnCarusel enviosDomilicio" ".                         main__imagenesEnCarusel mediosDePago" ".                         main__imagenesEnCarusel mediosDePago"; }
 
+.bodySeccionIndex {
+  display: grid;
+  grid-template-areas: "header header header header header header header header   ." "contendedorGeneral contendedorGeneral contendedorGeneral  ." "contendedorGeneral contendedorGeneral contendedorGeneral  ." "finDePagina finDePagina finDePagina finDePagina finDePagina"; }
+
 @media only screen and (max-width: 320px) {
-  .contendedorGeneral {
+  .header__navegacion {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: auto; }
+  .header__navegacion__menu li {
+    display: block;
+    font-size: 1.5rem; }
+  #finDePagina {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     height: auto;
-    grid-template-columns: 8fr;
-    grid-template-rows: 400px 200px;
-    grid-column-gap: 3px;
-    grid-row-gap: 3px;
-    grid-template-areas: "main__imagenesEnCarusel" "main__imagenesEnCarusel" "main__imagenesEnCarusel"; } }
+    background-color: white; }
+  .bodySeccionIndex {
+    background-color: #8AC3B8; } }
 
 @media only screen and (min-width: 321px) and (max-width: 767px) {
   .contendedorGeneral {

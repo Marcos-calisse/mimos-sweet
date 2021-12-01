@@ -136,7 +136,6 @@ ul li:hover ul{
       
 }
 .contendedorGeneral{
-    
     height: auto;
     margin-top: 100px;
     width: 100%;
@@ -149,28 +148,44 @@ ul li:hover ul{
     "section__botonesProductos main__imagenesEnCarusel enviosDomilicio"
     ".                         main__imagenesEnCarusel mediosDePago"
     ".                         main__imagenesEnCarusel mediosDePago"
-    ;
+   ;
    
      
 }
+.bodySeccionIndex{
+    display: grid;
+    grid-template-areas: 
+    "header header header header header header header header   ."
+    "contendedorGeneral contendedorGeneral contendedorGeneral  ."
+    "contendedorGeneral contendedorGeneral contendedorGeneral  ."
+    "finDePagina finDePagina finDePagina finDePagina finDePagina";
+}
 
 @media only screen and (max-width: 320px){
-    .contendedorGeneral{
+   .header__navegacion{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: auto;
+   }
+   .header__navegacion__menu{
+       li{
+           display: block;
+           font-size: 1.5rem;
+        }
 
-        height: auto;
-        grid-template-columns: 8fr;
-        grid-template-rows: 400px 200px;
-        grid-column-gap: 3px;
-        grid-row-gap: 3px;
-        grid-template-areas: 
-        "main__imagenesEnCarusel"
-        "main__imagenesEnCarusel"
-        "main__imagenesEnCarusel"
-        ;
-       
-         
+   }
+   #finDePagina{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: white;
+   }
+   .bodySeccionIndex{
+       background-color: $colorBackgroundCuaternario;
     }
-   
 
 }
 
