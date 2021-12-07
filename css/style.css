@@ -106,12 +106,20 @@ ul li:hover ul {
   display: grid;
   grid-template-areas: "header header header header header header header header" "contendedorGeneral contendedorGeneral contendedorGeneral" "contendedorGeneral contendedorGeneral contendedorGeneral" "finDePagina finDePagina finDePagina finDePagina finDePagina"; }
 
-.imagenesCarousel {
-  margin-top: 10%;
-  width: 400px;
-  height: 300px; }
+.contendedorGeneral {
+  height: 1000px;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  grid-template-rows: 300px 400px 300px;
+  grid-template-areas: "imagenCentral imagenCentral" "section__botonesProductos ." "mediosDePago enviosDomilicio"; }
 
-@media only screen and (max-width: 768px) {
+.imagenCentral {
+  grid-area: imagenCentral;
+  margin-top: 100px;
+  height: 300px;
+  width: 100%; }
+
+@media only screen and (max-width: 320px) {
   .header__navegacion {
     display: flex;
     flex-direction: column;
@@ -136,12 +144,16 @@ ul li:hover ul {
     margin-left: 0px;
     margin-right: 0px; }
   .mediosDePago {
-    margin: 0px; } }
+    margin: 0px; }
+  .contenedorImagenCentral {
+    margin-top: 0px;
+    width: 100%; } }
 
 .section__botonesProductos {
   order: 2;
   flex-grow: 1;
-  margin-top: 100px; }
+  margin-top: 100px;
+  grid-area: section__botonesProductos; }
 
 .mediosDePago {
   order: 4;
@@ -149,7 +161,8 @@ ul li:hover ul {
   align-items: center;
   height: 450px;
   height: 400px;
-  width: 300px; }
+  width: 300px;
+  grid-area: mediosDePago; }
 
 .mediosDePago__contenedor {
   display: flex;
@@ -171,7 +184,8 @@ ul li:hover ul {
   justify-content: space-evenly;
   margin-bottom: 200px;
   height: 400px;
-  width: 450px; }
+  width: 450px;
+  grid-area: enviosDomilicio; }
 
 .enviosDomilicio__titulo img {
   width: 50px;
@@ -404,7 +418,7 @@ ul li:hover ul {
   display: grid;
   grid-template-areas: "headerSeccionProductos headerSeccionProductos" "contenidoSeccionProductos contenidoSeccionProductos" "contenidoSeccionProductos contenidoSeccionProductos" "contenidoSeccionProductos contenidoSeccionProductos" "footerSeccionProductos footerSeccionProductos"; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 320px) {
   .bodySeccionProductos {
     display: grid;
     grid-template-areas: "headerSeccionProductos" "contenidoSeccionProductos" "contenidoSeccionProductos" "contenidoSeccionProductos" "footerSeccionProductos";

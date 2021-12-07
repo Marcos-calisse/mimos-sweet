@@ -144,14 +144,26 @@ ul li:hover ul{
     "contendedorGeneral contendedorGeneral contendedorGeneral"
     "finDePagina finDePagina finDePagina finDePagina finDePagina";
 }
-.imagenesCarousel{
-    margin-top: 10%;
-    width: 400px;
+.contendedorGeneral{
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 300px 400px 300px;
+    grid-template-areas: 
+    "imagenCentral imagenCentral"
+    "section__botonesProductos ."
+    "mediosDePago enviosDomilicio";
+}
+.imagenCentral{
+    grid-area: imagenCentral;
+    margin-top: 100px;
     height: 300px;
-
+    width: 100%;
 }
 
-@media only screen and (max-width: 768px){
+
+
+@media only screen and (max-width: 320px){
    .header__navegacion{
     display: flex;
     flex-direction: column;
@@ -190,6 +202,10 @@ ul li:hover ul{
     .mediosDePago{
         margin: 0px;
     }
+    .contenedorImagenCentral{
+        margin-top: 0px;
+        width: 100%;
+    }
 
 
 }
@@ -198,6 +214,7 @@ ul li:hover ul{
     order: 2;
     flex-grow: 1;
     margin-top: 100px;
+    grid-area: section__botonesProductos;
     
 }
 
@@ -206,7 +223,8 @@ ul li:hover ul{
     display: flex;
     align-items: center;
     height: $altoDeCaja * 1.5;
-    @include cajas(400px, 300px)
+    @include cajas(400px, 300px);
+    grid-area: mediosDePago;
      
 }
 .mediosDePago__contenedor{
@@ -230,7 +248,8 @@ ul li:hover ul{
     flex-direction: column;
     justify-content: space-evenly;
     margin-bottom: 200px;
-    @include cajas(400px, 450px)
+    @include cajas(400px, 450px);
+    grid-area: enviosDomilicio;
 }
 .enviosDomilicio__titulo img{
     width: 50px;
@@ -529,7 +548,7 @@ ul li:hover ul{
     "contenidoSeccionProductos contenidoSeccionProductos"
     "footerSeccionProductos footerSeccionProductos";
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 320px){
     .bodySeccionProductos{
         display: grid;
         grid-template-areas: 
