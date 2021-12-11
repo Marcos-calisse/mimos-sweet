@@ -340,9 +340,6 @@ ul li:hover ul{
 }
 
 /* Seccion Nosotros*/
-.textoNosotros{
-    margin-top: 100px;
-}
 .navSeccionNosotros{
     display: flex;
     flex-direction: row;
@@ -370,6 +367,12 @@ ul li:hover ul{
         color: white;
         font-weight: bold;
     }
+}
+.contenidoSeccionNosotros{
+    height: 100vh;
+}
+.tituloNosotros{
+    border-bottom: 5px purple solid;
 }
 
 /* seccion Recetas*/
@@ -548,7 +551,7 @@ ul li:hover ul{
     "contenidoSeccionProductos contenidoSeccionProductos"
     "footerSeccionProductos footerSeccionProductos";
 }
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 470px){
     .bodySeccionProductos{
         display: grid;
         grid-template-areas: 
@@ -557,12 +560,12 @@ ul li:hover ul{
         "contenidoSeccionProductos"
         "contenidoSeccionProductos"
         "footerSeccionProductos";
-        background-color: $colorBackgroundCuaternario;
+        
     }
     .headerSeccionProductos nav{
         display: flex;
         flex-direction: column;
-        background-color: white;
+        background-color: $colorBackgroundCuaternario;
         
         
     }
@@ -581,7 +584,7 @@ ul li:hover ul{
         flex-direction: column;
         flex-wrap: wrap;
         height: auto;
-        background-color: white;
+        background-color: $colorBackgroundCuaternario;
         
     }
    

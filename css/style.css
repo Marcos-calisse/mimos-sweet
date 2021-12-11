@@ -7,7 +7,7 @@
 /* MEDIDAS */
 body {
   font-family: 'Roboto Mono', monospace;
-  background-color: #fdcbd3; }
+  background-color: #fdfdfd; }
 
 /*Seccion Index*/
 .imagenLogo {
@@ -251,9 +251,6 @@ ul li:hover ul {
   width: 100%; }
 
 /* Seccion Nosotros*/
-.textoNosotros {
-  margin-top: 100px; }
-
 .navSeccionNosotros {
   display: flex;
   flex-direction: row;
@@ -276,6 +273,12 @@ ul li:hover ul {
 .menuSeccionNosotros a:hover {
   color: white;
   font-weight: bold; }
+
+.contenidoSeccionNosotros {
+  height: 100vh; }
+
+.tituloNosotros {
+  border-bottom: 5px purple solid; }
 
 /* seccion Recetas*/
 .contenidoRecetas {
@@ -418,15 +421,14 @@ ul li:hover ul {
   display: grid;
   grid-template-areas: "headerSeccionProductos headerSeccionProductos" "contenidoSeccionProductos contenidoSeccionProductos" "contenidoSeccionProductos contenidoSeccionProductos" "contenidoSeccionProductos contenidoSeccionProductos" "footerSeccionProductos footerSeccionProductos"; }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 470px) {
   .bodySeccionProductos {
     display: grid;
-    grid-template-areas: "headerSeccionProductos" "contenidoSeccionProductos" "contenidoSeccionProductos" "contenidoSeccionProductos" "footerSeccionProductos";
-    background-color: #8AC3B8; }
+    grid-template-areas: "headerSeccionProductos" "contenidoSeccionProductos" "contenidoSeccionProductos" "contenidoSeccionProductos" "footerSeccionProductos"; }
   .headerSeccionProductos nav {
     display: flex;
     flex-direction: column;
-    background-color: white; }
+    background-color: #8AC3B8; }
   .navSeccionProductos ul li {
     display: block;
     margin-left: 0px;
@@ -439,7 +441,7 @@ ul li:hover ul {
     flex-direction: column;
     flex-wrap: wrap;
     height: auto;
-    background-color: white; } }
+    background-color: #8AC3B8; } }
 
 /* seccion 404 */
 .contenderseccion404 {
