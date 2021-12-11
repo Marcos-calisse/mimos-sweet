@@ -106,17 +106,9 @@ ul li:hover ul {
   display: grid;
   grid-template-areas: "header header header header header header header header" "contendedorGeneral contendedorGeneral contendedorGeneral" "contendedorGeneral contendedorGeneral contendedorGeneral" "finDePagina finDePagina finDePagina finDePagina finDePagina"; }
 
-.contendedorGeneral {
-  height: 1000px;
-  display: grid;
-  grid-template-columns: 6fr 6fr;
-  grid-template-rows: 300px 400px 300px;
-  grid-template-areas: "imagenCentral imagenCentral" "section__botonesProductos ." "mediosDePago enviosDomilicio"; }
-
 .imagenCentral {
-  grid-area: imagenCentral;
   margin-top: 100px;
-  height: 300px;
+  height: 100vh;
   width: 100%; }
 
 @media only screen and (max-width: 470px) {
@@ -150,19 +142,13 @@ ul li:hover ul {
     width: 100%; } }
 
 .section__botonesProductos {
-  order: 2;
-  flex-grow: 1;
-  margin-top: 100px;
-  grid-area: section__botonesProductos; }
+  margin-top: 50vh; }
 
 .mediosDePago {
-  order: 4;
   display: flex;
   align-items: center;
-  height: 450px;
-  height: 400px;
-  width: 300px;
-  grid-area: mediosDePago; }
+  height: 300px;
+  margin-top: 50vh; }
 
 .mediosDePago__contenedor {
   display: flex;
@@ -178,14 +164,10 @@ ul li:hover ul {
   display: inline; }
 
 .enviosDomilicio {
-  order: 3;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-bottom: 200px;
-  height: 400px;
-  width: 450px;
-  grid-area: enviosDomilicio; }
+  margin-top: 50vh; }
 
 .enviosDomilicio__titulo img {
   width: 50px;
@@ -280,32 +262,40 @@ ul li:hover ul {
 .tituloNosotros {
   border-bottom: 5px purple solid; }
 
-/* seccion Recetas*/
-.contenidoRecetas {
+/* seccion Pedidos*/
+.contenidoSeccionPedidos {
   margin-top: 100px; }
 
-.navSeccionRecetas {
+.navSeccionpedidos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #f06292; }
 
-.menuSeccionrecetas li {
+.menuSeccionPedidos li {
   list-style-type: none;
   display: inline;
   margin: 10px;
   padding: 5px 10px; }
-  .menuSeccionrecetas li a {
+  .menuSeccionPedidos li a {
     text-decoration: none;
     color: black; }
 
-.menuSeccionrecetas li:hover {
+.menuSeccionPedidos li:hover {
   background-color: purple; }
 
-.menuSeccionrecetas a:hover {
+.menuSeccionPedidos a:hover {
   color: white;
   font-weight: bold; }
+
+.footerContacto__seccionPedidos a {
+  text-decoration: none;
+  color: black;
+  margin-left: 5px; }
+
+.footerContacto__titulo {
+  text-align: center; }
 
 /*Seccion Productos*/
 .contenidoSeccionProductos {
@@ -363,9 +353,6 @@ ul li:hover ul {
 .imagenesProductos div {
   margin: 20px; }
 
-.imagenesProductos:hover img {
-  opacity: .3; }
-
 .imagenesProductos img:hover {
   transform: rotate(2deg);
   opacity: 1; }
@@ -381,8 +368,8 @@ ul li:hover ul {
 .fotosProductos {
   transform: perspective(110px) rotateY(0deg);
   transition: 500ms;
-  width: 300px;
-  height: 300px; }
+  width: 400px;
+  height: 400px; }
 
 .botonCard {
   background-color: #f06292; }

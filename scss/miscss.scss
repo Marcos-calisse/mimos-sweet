@@ -6,11 +6,6 @@
 }
 @import "variables";
 
-@mixin cajas ($altoDeCaja, $anchoCaja){
-    height: $altoDeCaja;
-    width: $anchoCaja;
-    
-}
 body{
     font-family: 'Roboto Mono', monospace;
     background-color: $colorBackgroundPrincipal;
@@ -144,21 +139,13 @@ ul li:hover ul{
     "contendedorGeneral contendedorGeneral contendedorGeneral"
     "finDePagina finDePagina finDePagina finDePagina finDePagina";
 }
-.contendedorGeneral{
-    height: 1000px;
-    display: grid;
-    grid-template-columns: 6fr 6fr;
-    grid-template-rows: 300px 400px 300px;
-    grid-template-areas: 
-    "imagenCentral imagenCentral"
-    "section__botonesProductos ."
-    "mediosDePago enviosDomilicio";
-}
+
+
 .imagenCentral{
-    grid-area: imagenCentral;
     margin-top: 100px;
-    height: 300px;
+    height: 100vh;
     width: 100%;
+
 }
 
 
@@ -211,20 +198,15 @@ ul li:hover ul{
 }
 
 .section__botonesProductos{
-    order: 2;
-    flex-grow: 1;
-    margin-top: 100px;
-    grid-area: section__botonesProductos;
+    margin-top: 50vh;
     
 }
 
 .mediosDePago{
-    order: 4;
     display: flex;
     align-items: center;
-    height: $altoDeCaja * 1.5;
-    @include cajas(400px, 300px);
-    grid-area: mediosDePago;
+    height: $altoDeCaja;
+    margin-top: 50vh;
      
 }
 .mediosDePago__contenedor{
@@ -243,13 +225,10 @@ ul li:hover ul{
     display: inline;
 }
 .enviosDomilicio{
-    order: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-bottom: 200px;
-    @include cajas(400px, 450px);
-    grid-area: enviosDomilicio;
+    margin-top: 50vh;
 }
 .enviosDomilicio__titulo img{
     width: 50px;
@@ -375,18 +354,18 @@ ul li:hover ul{
     border-bottom: 5px purple solid;
 }
 
-/* seccion Recetas*/
-.contenidoRecetas{
+/* seccion Pedidos*/
+.contenidoSeccionPedidos{
     margin-top: 100px;
 }
-.navSeccionRecetas{
+.navSeccionpedidos{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: $colorBackgroundSecundario;
 }
-.menuSeccionrecetas{
+.menuSeccionPedidos{
     li{
         list-style-type: none;
         display: inline;
@@ -406,6 +385,17 @@ ul li:hover ul{
         color: white;
         font-weight: bold;
     }
+}
+.footerContacto__seccionPedidos{
+    a{
+        text-decoration: none;
+        color: black;
+        margin-left: 5px;
+    }
+}
+.footerContacto__titulo{
+    text-align: center;
+    
 }
 
 
@@ -479,9 +469,6 @@ ul li:hover ul{
     margin: 20px;
 }
 
-.imagenesProductos:hover img {
-	opacity: .3;
-}
 .imagenesProductos img:hover {
 	transform: rotate(2deg);
 	opacity: 1;
@@ -499,8 +486,8 @@ ul li:hover ul{
 .fotosProductos{
     transform: perspective(110px) rotateY(0deg);
     transition: 500ms;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
 
 }
 .botonCard{
