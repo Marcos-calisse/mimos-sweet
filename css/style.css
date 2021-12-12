@@ -147,7 +147,6 @@ ul li:hover ul {
 .mediosDePago {
   display: flex;
   align-items: center;
-  height: 300px;
   margin-top: 50vh; }
 
 .mediosDePago__contenedor {
