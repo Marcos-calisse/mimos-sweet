@@ -115,7 +115,7 @@ ul li:hover ul {
   .header__navegacion {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #8AC3B8;
     width: 100%;
     height: auto;
     position: sticky; }
@@ -127,7 +127,7 @@ ul li:hover ul {
     flex-direction: column;
     flex-wrap: wrap;
     height: auto;
-    background-color: white; }
+    background-color: #8AC3B8; }
   .section__botonesProductos__botones li {
     display: inline;
     font-size: 0.5rem; }
@@ -222,7 +222,6 @@ ul li:hover ul {
 .footerSeccionContacto {
   grid-area: footerSeccionContacto;
   color: black;
-  font-style: italic;
   height: 100px;
   background-color: #f06292;
   display: flex;
