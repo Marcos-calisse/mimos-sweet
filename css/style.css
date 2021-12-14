@@ -111,7 +111,7 @@ ul li:hover ul {
   height: 100vh;
   width: 100%; }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .header__navegacion {
     display: flex;
     flex-direction: column;
@@ -230,6 +230,38 @@ ul li:hover ul {
   align-items: center;
   width: 100%; }
 
+.footerContacto p {
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center; }
+
+.footerTexto {
+  font-weight: bold;
+  font-size: 15px; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .footerSeccionContacto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: #8AC3B8; }
+  .navSeccionContacto {
+    display: flex;
+    flex-direction: column;
+    background-color: #8AC3B8;
+    width: 100%;
+    height: auto;
+    position: sticky; }
+  .menuSeccionContacto li {
+    display: block;
+    font-size: 1.5rem; }
+  .formularioContacto {
+    display: flex;
+    flex-direction: column; }
+  .seccionFormulario {
+    margin-top: 0px; } }
+
 /* Seccion Nosotros*/
 .navSeccionNosotros {
   display: flex;
@@ -294,6 +326,22 @@ ul li:hover ul {
 
 .footerContacto__titulo {
   text-align: center; }
+
+.contenidoSeccionPedidos__contenedor {
+  margin-bottom: 5em;
+  border-bottom: palevioletred 5px dotted; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .navSeccionpedidos {
+    display: flex;
+    flex-direction: column;
+    background-color: #8AC3B8;
+    width: 100%;
+    height: auto;
+    position: sticky; }
+  .menuSeccionPedidos li {
+    display: block;
+    font-size: 1.5rem; } }
 
 /*Seccion Productos*/
 .contenidoSeccionProductos {
@@ -402,11 +450,14 @@ ul li:hover ul {
 .footerSeccionProductos ul {
   list-style-type: none; }
 
+.footerTexto {
+  text-align: center; }
+
 .bodySeccionProductos {
   display: grid;
   grid-template-areas: "headerSeccionProductos headerSeccionProductos" "contenidoSeccionProductos contenidoSeccionProductos" "contenidoSeccionProductos contenidoSeccionProductos" "contenidoSeccionProductos contenidoSeccionProductos" "footerSeccionProductos footerSeccionProductos"; }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .bodySeccionProductos {
     display: grid;
     grid-template-areas: "headerSeccionProductos" "contenidoSeccionProductos" "contenidoSeccionProductos" "contenidoSeccionProductos" "footerSeccionProductos"; }
