@@ -143,7 +143,7 @@ ul li:hover ul{
 
 .imagenCentral{
     margin-top: 100px;
-    height: 100vh;
+    height: 50vh;
     width: 100%;
 
 }
@@ -190,7 +190,7 @@ ul li:hover ul{
     .mediosDePago{
         margin: 0px;
     }
-    .contenedorImagenCentral{
+    .imagenCentral{
         margin-top: 0px;
         width: 100%;
     }
@@ -356,7 +356,8 @@ ul li:hover ul{
         
     }
     .seccionFormulario{
-        margin-top: 0px;
+        margin-top: 5em;
+        margin-bottom: 5em;
     }
     
 }
@@ -394,7 +395,16 @@ ul li:hover ul{
     height: 100vh;
 }
 .tituloNosotros{
-    border-bottom: 5px purple solid;
+    border-bottom: 5px rgb(253, 131, 152) solid;
+}
+.contenedorTexto{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .navSeccionNosotros{
+        background-color: $colorBackgroundCuaternario;
+    }
 }
 
 /* seccion Pedidos*/
