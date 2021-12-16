@@ -122,11 +122,11 @@ ul li:hover ul{
         margin: 20px 5px;
         font-weight: bold;
         font-size: 1rem;
-        border: rgb(253, 112, 112) solid 5px;
+        border: rgb(253, 5, 141) solid 5px;
     }
     a:hover{
-        background-color: purple;
         color: white;
+        background-color: rgb(253, 5, 141);
     }
       
 }
@@ -143,9 +143,8 @@ ul li:hover ul{
 
 .imagenCentral{
     margin-top: 100px;
-    height: 50vh;
+    height: 400px;
     width: 100%;
-
 }
 
 
@@ -176,14 +175,23 @@ ul li:hover ul{
    }
  
     .section__botonesProductos__botones{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
         li{
-            display: inline;
+            display: block;
             font-size: 0.5rem;
-            
+         
+        }
+        a{
+            padding-left: 10em;
+            padding-right: 10em;
         }
     }
     .enviosDomilicio{
-        margin-top: 5%;
+        margin-top: 2%;
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -196,6 +204,11 @@ ul li:hover ul{
     }
 
 
+}
+.imagenesCarousel{
+
+    height: auto;
+    margin-top: 200px;
 }
 
 .section__botonesProductos{

@@ -97,10 +97,10 @@ ul li:hover ul {
     margin: 20px 5px;
     font-weight: bold;
     font-size: 1rem;
-    border: #fd7070 solid 5px; }
+    border: #fd058d solid 5px; }
   .section__botonesProductos__botones a:hover {
-    background-color: purple;
-    color: white; }
+    color: white;
+    background-color: #fd058d; }
 
 .bodySeccionIndex {
   display: grid;
@@ -108,7 +108,7 @@ ul li:hover ul {
 
 .imagenCentral {
   margin-top: 100px;
-  height: 50vh;
+  height: 400px;
   width: 100%; }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -128,11 +128,20 @@ ul li:hover ul {
     flex-wrap: wrap;
     height: auto;
     background-color: #8AC3B8; }
-  .section__botonesProductos__botones li {
-    display: inline;
-    font-size: 0.5rem; }
+  .section__botonesProductos__botones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+    .section__botonesProductos__botones li {
+      display: block;
+      font-size: 0.5rem; }
+    .section__botonesProductos__botones a {
+      padding-left: 10em;
+      padding-right: 10em; }
   .enviosDomilicio {
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 0px;
     margin-right: 0px; }
   .mediosDePago {
@@ -140,6 +149,10 @@ ul li:hover ul {
   .imagenCentral {
     margin-top: 0px;
     width: 100%; } }
+
+.imagenesCarousel {
+  height: auto;
+  margin-top: 200px; }
 
 .section__botonesProductos {
   margin-top: 50vh; }
