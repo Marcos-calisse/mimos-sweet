@@ -106,11 +106,6 @@ ul li:hover ul {
   display: grid;
   grid-template-areas: "header header header header header header header header" "contendedorGeneral contendedorGeneral contendedorGeneral" "contendedorGeneral contendedorGeneral contendedorGeneral" "finDePagina finDePagina finDePagina finDePagina finDePagina"; }
 
-.imagenCentral {
-  margin-top: 100px;
-  height: 400px;
-  width: 100%; }
-
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .header__navegacion {
     display: flex;
@@ -138,29 +133,48 @@ ul li:hover ul {
       display: block;
       font-size: 0.5rem; }
     .section__botonesProductos__botones a {
-      padding-left: 10em;
-      padding-right: 10em; }
+      padding-left: 5em;
+      padding-right: 5em; }
   .enviosDomilicio {
-    margin-top: 2%;
-    margin-left: 0px;
-    margin-right: 0px; }
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .mediosDePago {
-    margin: 0px; }
+    margin-top: 3em; }
   .imagenCentral {
     margin-top: 0px;
+    width: 100%;
+    height: 100vh; }
+  .seccionInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .enviosDomilicio__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .enviosDomilicio__titulo img {
+      width: 400px;
+      height: 400px; }
+  .ubicacion {
     width: 100%; } }
 
 .imagenesCarousel {
   height: auto;
-  margin-top: 200px; }
+  margin-top: 0px; }
 
-.section__botonesProductos {
-  margin-top: 50vh; }
+.imagenCentral {
+  width: 100%; }
+
+.seccionInfo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly; }
 
 .mediosDePago {
   display: flex;
-  align-items: center;
-  margin-top: 50vh; }
+  align-items: center; }
 
 .mediosDePago__contenedor {
   display: flex;
@@ -178,8 +192,7 @@ ul li:hover ul {
 .enviosDomilicio {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: 50vh; }
+  justify-content: space-evenly; }
 
 .enviosDomilicio__titulo img {
   width: 50px;
