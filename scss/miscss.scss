@@ -37,11 +37,6 @@ body{
             display: inline-block;
          
         }
-        a:hover{
-            color: white;
-            font-weight: bold;
-        
-        }
         ul{
             li{
                 display: block;
@@ -315,10 +310,7 @@ ul li:hover ul{
             color: black;
         }
     }
-    a:hover{
-        color: white;
-        font-weight: bold;
-    }
+   
 }
 .form-check-input{
     background-color: #8AC3B8;
@@ -383,7 +375,7 @@ ul li:hover ul{
     }
     .navSeccionContacto{
      display: flex;
-     flex-direction: column;
+     flex-direction: row;
      background-color: $colorBackgroundCuaternario;
      width: 100%;
      height: auto;
@@ -392,7 +384,6 @@ ul li:hover ul{
     .menuSeccionContacto{
         li{
            display: block;
-           font-size: 1.5rem;
         }
     }
     .formularioContacto{
@@ -433,25 +424,43 @@ ul li:hover ul{
             color: black;
         }
     }
-    a:hover{
-        color: white;
-        font-weight: bold;
-    }
 }
 .contenidoSeccionNosotros{
-    height: 100vh;
+    height: 40em;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 100px 300px;
+    grid-template-areas: 
+    "tituloNosotros tituloNosotros"
+    "contenedorTexto contenedorImagen";
+    
 }
 .tituloNosotros{
     border-bottom: 5px rgb(253, 131, 152) solid;
+    grid-area: tituloNosotros;
 }
 .contenedorTexto{
     margin-top: 2em;
     margin-bottom: 2em;
+    grid-area: contenedorTexto;
+    margin-left: 1em;
+}
+.contenedorImagen{
+    grid-area: contenedorImagen;
+    
+
 }
 @media only screen and (min-width: 320px) and (max-width: 767px){
-    .navSeccionNosotros{
-        background-color: $colorBackgroundCuaternario;
+    .contenidoSeccionNosotros{
+        grid-template-columns: 12fr;
+        grid-template-rows: 50px 350px 250px;
+        grid-template-areas: 
+        "tituloNosotros"
+        "contenedorTexto"
+        "contenedorImagen";
+        height: 50em;
     }
+
 }
 
 /* seccion Pedidos*/
@@ -476,11 +485,9 @@ ul li:hover ul{
             text-decoration: none;
             color: black;
         }
+        
     }
-    a:hover{
-        color: white;
-        font-weight: bold;
-    }
+    
 }
 .footerContacto__seccionPedidos{
     a{
@@ -500,7 +507,7 @@ ul li:hover ul{
 @media only screen and (min-width: 320px) and (max-width: 767px){
     .navSeccionpedidos{
      display: flex;
-     flex-direction: column;
+     flex-direction: row;
      background-color: $colorBackgroundCuaternario;
      width: 100%;
      height: auto;
@@ -509,7 +516,6 @@ ul li:hover ul{
     .menuSeccionPedidos{
         li{
             display: block;
-           font-size: 1.5rem;
         }
     }
 }
@@ -550,11 +556,6 @@ ul li:hover ul{
             color: black;
         }
     }
-    a:hover{
-        color: white;
-        font-weight: bold;
-    }
-    
 
 }
 .headerSeccionProductos{
@@ -573,33 +574,20 @@ ul li:hover ul{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 30px;
-    order: -1;
-    margin-top: 5%;
-}
-.imagenesProductos div{
-    margin: 20px;
+    margin-top: 3%;
 }
 
 .imagenesProductos img:hover {
-	transform: rotate(2deg);
+	transform: scale(1.1);
 	opacity: 1;
+    overflow: hidden
 }
 
-.imagenesProductos div p{
+.imagenesProductos div h3{
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
     color: white;
-    margin-bottom: 10px;
     background-color: #f06292;
-
-}
-.fotosProductos{
-    transform: perspective(110px) rotateY(0deg);
-    transition: 500ms;
-    width: 400px;
-    height: 400px;
 
 }
 .botonCard{
@@ -666,7 +654,7 @@ ul li:hover ul{
     }
     .headerSeccionProductos nav{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         background-color: $colorBackgroundCuaternario;
         
         

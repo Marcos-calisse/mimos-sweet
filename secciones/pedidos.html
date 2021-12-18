@@ -14,21 +14,47 @@
 </head>
 
 <body>
+    
     <header>
-       
-        <nav class="navSeccionpedidos">
+        <nav class="navbar navbar-expand-lg navbar-light navSeccionpedidos">
             <h1>
                 <a href="../index.html"> <img class="imagenLogo" src="../multimedia/imagenes/logo-mimossweet.jpeg" alt="Logo"></a>
             </h1>
-
-           <ul class="menuSeccionPedidos">
-               <li><a href="./nosotros.html">Nosotros</a></li>
-               <li><a href="./productos.html">Productos</a></li> 
-               <li><a href="./contacto.html">Contacto</a></li>
-               <li><a href="./pedidos.html">Tu pedido</a></li>
-           </ul>
+    
+            <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon iconoMenu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav menuSeccionPedidos">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pedidos.html">Tu pedido</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./productos.html" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./productos.html">Desayunos Premium</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">Desayunos Especiales</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">Tortas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    
         </nav>
+    
     </header>
+   
 
     <main class="contenidoSeccionPedidos">
         <div class="container contenidoSeccionPedidos__contenedor">

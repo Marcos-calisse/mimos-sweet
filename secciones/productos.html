@@ -20,25 +20,44 @@
 <body class="bodySeccionProductos">
 
     <!--Encabezado de Pagina-->
-
     <header class="headerSeccionProductos">
-
-        <nav class="navSeccionProductos">
-            <div>
-                <h1>
-                    <a href="../index.html"> <img class="imagenLogo" src="../multimedia/imagenes/logo-mimossweet.jpeg" alt="Logo"></a>
-                </h1>
-            </div>
-            <div>
-                <ul class="menuSeccionProductos">
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./pedidos.html">Tu pedido</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light navSeccionProductos">
+            <h1>
+                <a href="../index.html"> <img class="imagenLogo" src="../multimedia/imagenes/logo-mimossweet.jpeg" alt="Logo"></a>
+            </h1>
+    
+            <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon iconoMenu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav menuSeccionProductos">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pedidos.html">Tu pedido</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./productos.html" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./productos.html">Desayunos Premium</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">Desayunos Especiales</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">Tortas</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-        
+    
         </nav>
+    
     </header>
 
 
@@ -53,49 +72,75 @@
         </div>
 
         <section class="imagenesProductos">
-
-            <div>
-
-                <img class="fotosProductos" src="../multimedia/imagenes/Box delicia.jpeg" alt="Box Delicia.">
+            <div class="card" style="width: 18rem;">
+                <img src="../multimedia/imagenes/torta-choco.jpeg" class="card-img-top" alt="Choco torta">
+                <div class="card-body">
+                  <h3 class="card-title">Choco torta</h3>
+                  <a href="#" class="btn botonCard">$ Precio</a>
+                </div>
             </div>
-
-            <div>
-
-                <img class="fotosProductos" src="../multimedia/imagenes/Box delicia 2.jpeg" alt="Box delicia 2.">
+            <div class="card" style="width: 18rem;">
+                <img src="../multimedia/imagenes/torta-oreo.jpeg" class="card-img-top" alt="Torta oreo">
+                <div class="card-body">
+                  <h3 class="card-title">Torta oreo</h3>
+                  <a href="#" class="btn botonCard">$ Precio</a>
+                </div>
             </div>
-            <div>
-                <img class="fotosProductos" src="../multimedia/imagenes/regalo especial mama.jpeg" alt="Box dia de la Madre.">
+            <div class="card" style="width: 18rem;">
+                <img src="../multimedia/imagenes/torta-unica.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Torta Especial</h3>
+                  <a href="#" class="btn botonCard">$ Precio</a>
+                </div>
             </div>
-            <div>
-                
-                <img class="fotosProductos" src="../multimedia/imagenes/torta-oreo.jpeg" alt="">
+            <div class="card" style="width: 18rem;">
+                <img src="../multimedia/imagenes/huevo,chocoblanco.jpeg" class="card-img-top" alt="Huevo relleno blanco">
+                <div class="card-body">
+                  <h3 class="card-title">Huevo Chocolate Blanco</h3>
+                  <a href="#" class="btn botonCard">$ Precio</a>
+                </div>
             </div>
-            <div>
-                
-                <img class="fotosProductos" src="../multimedia/imagenes/dia-de-los-enamorados.jpeg" alt="">
+            <div class="card" style="width: 18rem;">
+                <img src="../multimedia/imagenes/huevo-kinder.jpeg" class="card-img-top" alt="Huevo kinder">
+                <div class="card-body">
+                  <h3 class="card-title">Huevo Kinder</h3>
+                  <a href="#" class="btn botonCard">$ Precio</a>
+                </div>
             </div>
-            <div>
-                
-                <img class="fotosProductos" src="../multimedia/imagenes/alfajores.jpeg" alt="">
+            <div class="card" style="width: 18rem;">
+                <img src="../multimedia/imagenes/huevo-chocotorta.jpeg" class="card-img-top" alt="Huevo choco torta">
+                <div class="card-body">
+                  <h3 class="card-title">Huevo Choco Torta</h3>
+                  <a href="#" class="btn botonCard">$ Precio</a>
+                </div>
             </div>
-            <div>
-                
-                <img class="fotosProductos" src="../multimedia/imagenes/alfajores2.jpeg" alt="">
+            <div class="card" style="width: 18rem;">
+                <img src="../multimedia/imagenes/dia-de-los-enamorados.jpeg" class="card-img-top" alt="Dia de los enamorados">
+                <div class="card-body">
+                  <h3 class="card-title">Dia de los enamorados</h3>
+                  <a href="#" class="btn botonCard">$ Precio</a>
+                </div>
             </div>
-            <div>
-                <img class="fotosProductos" src="../multimedia/imagenes/torta-choco.jpeg" alt="">
+            <div class="card" style="width: 18rem;">
+                <img src="../multimedia/imagenes/regalo especial mama.jpeg" class="card-img-top" alt="Dia de las madres">
+                <div class="card-body">
+                  <h3 class="card-title">Dia de la Madre</h3>
+                  <a href="#" class="btn botonCard">$ Precio</a>
+                </div>
             </div>
-            <div>
-                <img  class="fotosProductos" src="../multimedia/imagenes/huevo,chocoblanco.jpeg" alt="">
+            <div class="card" style="width: 18rem;">
+                <img src="../multimedia/imagenes/alfajores.jpeg" class="card-img-top" alt="Alfajores">
+                <div class="card-body">
+                  <h3 class="card-title">alfajores Chocolate</h3>
+                  <a href="#" class="btn botonCard">$ Precio</a>
+                </div>
             </div>
-            <div>
-                <img class="fotosProductos" src="../multimedia/imagenes/huevo-chocotorta.jpeg" alt="">
-            </div>
-            <div>
-                <img class="fotosProductos" src="../multimedia/imagenes/huevo-fruti.jpeg" alt="">
-            </div>
-            <div>
-                <img class="fotosProductos" src="../multimedia/imagenes/huevo-kinder.jpeg" alt="">
+            <div class="card" style="width: 18rem;">
+                <img src="../multimedia/imagenes/masas-finas.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Masas Finas</h3>
+                  <a href="#" class="btn botonCard">$ Precio</a>
+                </div>
             </div>
 
         </section>
