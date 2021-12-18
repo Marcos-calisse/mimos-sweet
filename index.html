@@ -20,29 +20,45 @@
 <body class="bodySeccionIndex">
     <!--Encabezado de Pagina-->
     <header class="header">
-
-        <nav class="header__navegacion">
-
-            <h1 class="header__navegacion__logo">
-
-                <a href="./index.html"> <img class="imagenLogo" src="./multimedia/imagenes/logo-mimossweet.jpeg" alt="Logo sitio."></a>
-
-            </h1>
-
-            <ul class="header__navegacion__menu">
-                <li><a href="./secciones/nosotros.html">Nosotros</a></li>
-                <li><a href="./secciones/productos.html">Productos</a>
-                    <ul>
-                        <li><a href="./secciones/productos.html#productosBox">Desayunos Premium</a></li>
-                        <li><a href="./secciones/productos.html#productosBox">Desayunos Especiales</a></li>
-                        <li><a href="./secciones/productos.html#productosBox">Tortas Unicas</a></li>
-                    </ul>
-                </li>
-                <li><a href="./secciones/contacto.html">Contacto</a></li>
-                <li><a href="./secciones/pedidos.html">Tu pedido</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+    
+            <a href="../index.html"> <img class="imagenLogo" src="../multimedia/imagenes/logo-mimossweet.jpeg"
+                    alt="Logo"></a>
+            <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon iconoMenu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./secciones/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./secciones/pedidos.html">Tu pedido</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./seccions/productos.html" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./productos.html">Desayunos Premium</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">Desayunos Especiales</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">Tortas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    
         </nav>
+    
     </header>
+    
+
     <!--Contenido de mi pagina-->
 
     <main class="contendedorGeneral">
@@ -65,7 +81,7 @@
 
         
 
-        <section class="section__botonesProductos">
+        <div class=" container section__botonesProductos">
         
             <ul class="section__botonesProductos__botones">
                 <li><a class="btn" href="./secciones/productos.html" role="button">Box Delicias</a></li>
@@ -73,7 +89,7 @@
                 <li><a class="btn" href="./secciones/productos.html" role="button">Regalos Empresariales</a></li>
             </ul>
         
-        </section>
+        </div>
         
         <div class="seccionInfo">
             

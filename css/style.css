@@ -55,8 +55,7 @@ ul li:hover ul {
   margin-left: 0px;
   margin-top: 0px;
   align-items: center;
-  z-index: 2;
-  position: fixed; }
+  z-index: 2; }
 
 #finDePagina {
   color: black;
@@ -91,15 +90,12 @@ ul li:hover ul {
 .section__botonesProductos {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  background-color: powderblue;
-  height: 50vh; }
+  height: auto;
+  margin-top: 50px; }
 
 .section__botonesProductos__botones {
   display: inline-block;
-  list-style-type: none;
-  padding-left: 0px;
-  text-align: center; }
+  list-style-type: none; }
   .section__botonesProductos__botones li {
     display: inline; }
   .section__botonesProductos__botones a {
@@ -135,8 +131,7 @@ ul li:hover ul {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%; }
+    align-items: center; }
     .section__botonesProductos__botones li {
       display: block;
       font-size: 0.5rem; }
@@ -172,15 +167,12 @@ ul li:hover ul {
       width: 400px;
       height: 400px; }
   .ubicacion {
-    width: 100%; }
-  .section__botonesProductos {
-    margin-top: 0px; } }
+    width: 100%; } }
 
 .imagenesCarousel {
-  height: 100vh;
+  height: auto;
   margin-top: 0px;
-  width: 100%;
-  overflow-y: hidden; }
+  width: 100%; }
 
 .imagenCentral {
   width: 100%; }
@@ -243,11 +235,13 @@ ul li:hover ul {
     text-decoration: none;
     color: black; }
 
-.menuSeccionContacto li:hover {
-  background-color: purple; }
-
 .menuSeccionContacto a:hover {
-  color: white; }
+  color: white;
+  font-weight: bold; }
+
+.form-check-input {
+  background-color: #8AC3B8;
+  border: #f06292 solid; }
 
 .bodySeccionContacto {
   width: 100%;
@@ -315,6 +309,9 @@ ul li:hover ul {
   align-items: center;
   background-color: #f06292; }
 
+.botonMenu .iconoMenu {
+  background-image: url(../multimedia/imagenes/icono-dona.png); }
+
 .menuSeccionNosotros li {
   list-style-type: none;
   display: inline;
@@ -323,9 +320,6 @@ ul li:hover ul {
   .menuSeccionNosotros li a {
     text-decoration: none;
     color: black; }
-
-.menuSeccionNosotros li:hover {
-  background-color: purple; }
 
 .menuSeccionNosotros a:hover {
   color: white;
@@ -364,9 +358,6 @@ ul li:hover ul {
   .menuSeccionPedidos li a {
     text-decoration: none;
     color: black; }
-
-.menuSeccionPedidos li:hover {
-  background-color: purple; }
 
 .menuSeccionPedidos a:hover {
   color: white;
@@ -423,9 +414,6 @@ ul li:hover ul {
   .menuSeccionProductos li a {
     text-decoration: none;
     color: black; }
-
-.menuSeccionProductos li:hover {
-  background-color: purple; }
 
 .menuSeccionProductos a:hover {
   color: white;
