@@ -13,7 +13,7 @@ body {
 .imagenLogo {
   width: 100px;
   height: 100px;
-  margin: 2px; }
+  margin: 3px; }
 
 .header__navegacion h1 {
   display: inline; }
@@ -128,13 +128,18 @@ ul li:hover ul {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px; }
     .section__botonesProductos__botones li {
       display: block;
       font-size: 0.5rem; }
     .section__botonesProductos__botones a {
       padding-left: 5em;
       padding-right: 5em; }
+  .section__botonesProductos {
+    padding-right: 0px;
+    padding-left: 0px; }
   .enviosDomilicio {
     margin-top: 5em;
     display: flex;
@@ -322,7 +327,8 @@ ul li:hover ul {
 
 .tituloNosotros {
   border-bottom: 5px #fd8398 solid;
-  grid-area: tituloNosotros; }
+  grid-area: tituloNosotros;
+  padding-bottom: 5px; }
 
 .contenedorTexto {
   margin-top: 2em;
@@ -331,14 +337,19 @@ ul li:hover ul {
   margin-left: 1em; }
 
 .contenedorImagen {
-  grid-area: contenedorImagen; }
+  grid-area: contenedorImagen;
+  margin-top: 5px; }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .contenidoSeccionNosotros {
     grid-template-columns: 12fr;
     grid-template-rows: 50px 350px 250px;
     grid-template-areas: "tituloNosotros" "contenedorTexto" "contenedorImagen";
-    height: 50em; } }
+    height: 50em; }
+  .tituloNosotros {
+    margin-top: 20px; }
+  .contenedorTexto {
+    margin-left: 0px; } }
 
 /* seccion Pedidos*/
 .contenidoSeccionPedidos {

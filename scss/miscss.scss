@@ -17,7 +17,7 @@ body{
 .imagenLogo{
     width: 100px;
     height: 100px;
-    margin: 2px;
+    margin: 3px;
 }
 
 .header__navegacion h1 {
@@ -70,9 +70,7 @@ ul li:hover ul{
     margin-left: 0px;
     margin-top: 0px;
     align-items: center;
-    z-index: 2;
-    
-    
+    z-index: 2; 
 }
     
 #finDePagina {
@@ -173,6 +171,8 @@ ul li:hover ul{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-left: 0px;
+        padding-right: 0px;
         
         li{
             display: block;
@@ -183,6 +183,10 @@ ul li:hover ul{
             padding-left: 5em;
             padding-right: 5em;
         }
+    }
+    .section__botonesProductos{
+        padding-right: 0px;
+        padding-left: 0px;
     }
     .enviosDomilicio{
         margin-top: 5em;
@@ -438,6 +442,7 @@ ul li:hover ul{
 .tituloNosotros{
     border-bottom: 5px rgb(253, 131, 152) solid;
     grid-area: tituloNosotros;
+    padding-bottom: 5px;
 }
 .contenedorTexto{
     margin-top: 2em;
@@ -447,8 +452,7 @@ ul li:hover ul{
 }
 .contenedorImagen{
     grid-area: contenedorImagen;
-    
-
+    margin-top: 5px;
 }
 @media only screen and (min-width: 320px) and (max-width: 767px){
     .contenidoSeccionNosotros{
@@ -459,6 +463,12 @@ ul li:hover ul{
         "contenedorTexto"
         "contenedorImagen";
         height: 50em;
+    }
+    .tituloNosotros{
+        margin-top: 20px;
+    }
+    .contenedorTexto{
+        margin-left: 0px
     }
 
 }
