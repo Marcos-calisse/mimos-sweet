@@ -193,6 +193,9 @@ ul li:hover ul {
   flex-direction: column;
   justify-content: center; }
 
+.mediosDePago__contenedor__titulo {
+  color: #8AC3B8; }
+
 .mediosDePago__contenedor img {
   width: 30px;
   height: 30px;
@@ -212,7 +215,8 @@ ul li:hover ul {
 
 .enviosDomilicio__titulo h2 {
   display: inline;
-  text-align: center; }
+  text-align: center;
+  color: #8AC3B8; }
 
 /* Seccion Contacto */
 .formularioContacto {
@@ -354,6 +358,10 @@ ul li:hover ul {
 /* seccion Pedidos*/
 .contenidoSeccionPedidos {
   margin-top: 100px; }
+
+.contenidoSeccionPedidos__contenedor a {
+  color: #8AC3B8;
+  font-weight: bold; }
 
 .navSeccionpedidos {
   display: flex;

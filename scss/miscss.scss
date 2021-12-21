@@ -146,7 +146,7 @@ ul li:hover ul{
    .header__navegacion{
      display: flex;
      flex-direction: row;
-     background-color: $colorBackgroundCuaternario;
+     background-color: $colorBackgroundSecundario;
      width: 100%;
      height: auto;
      position: sticky;
@@ -163,7 +163,7 @@ ul li:hover ul{
      flex-direction: column;
      flex-wrap: wrap;
      height: auto;
-     background-color: $colorBackgroundCuaternario;
+     background-color: $colorBackgroundSecundario;
     }
  
     .section__botonesProductos__botones{
@@ -258,6 +258,9 @@ ul li:hover ul{
   justify-content: center;
   
 }
+.mediosDePago__contenedor__titulo{
+    color: $colorBackgroundSecundario;
+}
 .mediosDePago__contenedor img{
     width: 30px;
     height: 30px;
@@ -280,6 +283,7 @@ ul li:hover ul{
 .enviosDomilicio__titulo h2{
     display: inline;
     text-align: center;
+    color: $colorBackgroundSecundario;
     
 }
 
@@ -374,13 +378,13 @@ ul li:hover ul{
      flex-direction: column;
      flex-wrap: wrap;
      height: auto;
-     background-color: $colorBackgroundCuaternario;
+     background-color: $colorBackgroundSecundario;
 
     }
     .navSeccionContacto{
      display: flex;
      flex-direction: row;
-     background-color: $colorBackgroundCuaternario;
+     background-color: $colorBackgroundSecundario;
      width: 100%;
      height: auto;
      position: sticky;
@@ -477,6 +481,12 @@ ul li:hover ul{
 .contenidoSeccionPedidos{
     margin-top: 100px;
 }
+.contenidoSeccionPedidos__contenedor{
+    a{
+        color: $colorBackgroundSecundario;
+        font-weight: bold;
+    }
+}
 .navSeccionpedidos{
     display: flex;
     flex-direction: row;
@@ -518,7 +528,7 @@ ul li:hover ul{
     .navSeccionpedidos{
      display: flex;
      flex-direction: row;
-     background-color: $colorBackgroundCuaternario;
+     background-color: $colorBackgroundSecundario;
      width: 100%;
      height: auto;
      position: sticky;
@@ -529,8 +539,6 @@ ul li:hover ul{
         }
     }
 }
-
-
 
 /*Seccion Productos*/
 
@@ -665,7 +673,7 @@ ul li:hover ul{
     .headerSeccionProductos nav{
         display: flex;
         flex-direction: row;
-        background-color: $colorBackgroundCuaternario;
+        background-color: $colorBackgroundSecundario;
         
         
     }
@@ -684,7 +692,7 @@ ul li:hover ul{
         flex-direction: column;
         flex-wrap: wrap;
         height: auto;
-        background-color: $colorBackgroundCuaternario;
+        background-color: $colorBackgroundSecundario;
         
     }
    
