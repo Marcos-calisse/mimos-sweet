@@ -38,25 +38,18 @@ body{
          
         }
         ul{
+            background-color: #ffcdd2;
             li{
                 display: block;
+            
             }
         }
     }
 }
 
-ul ul li{
-    display: block;
-}
-
-ul li ul{
-    display: none;
-    position: absolute;
-    background-color: #ffcdd2;
-    color: black;
-}
 ul li:hover ul{
     display: block;
+
 }
 
 .header__navegacion{
@@ -107,14 +100,18 @@ ul li:hover ul{
 
 }
 .section__botonesProductos{
+    display: block;
     display: flex;
     flex-direction: row;
     height: auto;
     margin-top: 50px;
+    margin-bottom: 3%;
 }
 
 .section__botonesProductos__botones{
-    display: inline-block;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
     list-style-type: none;
         
     li{
@@ -140,6 +137,7 @@ ul li:hover ul{
     "contendedorGeneral contendedorGeneral contendedorGeneral"
     "finDePagina finDePagina finDePagina finDePagina finDePagina";
 }
+
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
 
@@ -286,6 +284,12 @@ ul li:hover ul{
     color: $colorBackgroundSecundario;
     
 }
+.contenedorUbicacion{
+    margin-top: 5%;
+    .ubicacion{
+        width: 100%;
+    }
+}
 
 
 
@@ -317,14 +321,19 @@ ul li:hover ul{
             text-decoration: none;
             color: black;
         }
+        ul{
+            background-color: #ffcdd2;
+            li{
+                display: block;
+            
+            }
+        }
     }
    
 }
 .form-check-input{
-    background-color: #8AC3B8;
     border: #f06292 solid;
 }
-
 
 .bodySeccionContacto{
     width: 100%;
@@ -405,6 +414,12 @@ ul li:hover ul{
     }
     
 }
+.botonform{
+    background-color: #f06292;
+}
+.contendedorBotonesFormulario{
+    margin-top: 1em;
+}
 
 /* Seccion Nosotros*/
 .navSeccionNosotros{
@@ -430,6 +445,13 @@ ul li:hover ul{
         a{
             text-decoration: none;
             color: black;
+        }
+        ul{
+            background-color: #ffcdd2;
+            li{
+                display: block;
+            
+            }
         }
     }
 }
@@ -505,6 +527,13 @@ ul li:hover ul{
             text-decoration: none;
             color: black;
         }
+        ul{
+            background-color: #ffcdd2;
+            li{
+                display: block;
+            
+            }
+        }
         
     }
     
@@ -573,6 +602,13 @@ ul li:hover ul{
             text-decoration: none;
             color: black;
         }
+        ul{
+            background-color: #ffcdd2;
+            li{
+                display: block;
+            
+            }
+        }
     }
 
 }
@@ -586,6 +622,9 @@ ul li:hover ul{
     padding: 0px;
     
 }
+.contendedorImagenProductos{
+    overflow: hidden;
+}
 
 .imagenesProductos{
     display: flex;
@@ -593,6 +632,12 @@ ul li:hover ul{
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 3%;
+}
+.card{
+    margin: 1rem;
+}
+.card-body{
+    background-color: pink;
 }
 
 .imagenesProductos img:hover {
@@ -608,9 +653,6 @@ ul li:hover ul{
     background-color: #f06292;
 
 }
-.botonCard{
-    background-color: #f06292;
-}
 
 .titoloSeccionProducto{
     margin-top: 50px;
@@ -620,8 +662,8 @@ ul li:hover ul{
     text-align: center;
     font-size: 200px;
     font-weight: bold;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
+    font-family: $fuentePrincipal;
+    background-color: rgb(253, 177, 219);
 }
 
 .footerSeccionProductos{

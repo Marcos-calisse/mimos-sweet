@@ -27,17 +27,10 @@ body {
     text-decoration: none;
     color: black;
     display: inline-block; }
-  .header__navegacion__menu li ul li {
-    display: block; }
-
-ul ul li {
-  display: block; }
-
-ul li ul {
-  display: none;
-  position: absolute;
-  background-color: #ffcdd2;
-  color: black; }
+  .header__navegacion__menu li ul {
+    background-color: #ffcdd2; }
+    .header__navegacion__menu li ul li {
+      display: block; }
 
 ul li:hover ul {
   display: block; }
@@ -85,13 +78,17 @@ ul li:hover ul {
   height: 40px; }
 
 .section__botonesProductos {
+  display: block;
   display: flex;
   flex-direction: row;
   height: auto;
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 3%; }
 
 .section__botonesProductos__botones {
-  display: inline-block;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
   list-style-type: none; }
   .section__botonesProductos__botones li {
     display: inline; }
@@ -218,6 +215,11 @@ ul li:hover ul {
   text-align: center;
   color: #8AC3B8; }
 
+.contenedorUbicacion {
+  margin-top: 5%; }
+  .contenedorUbicacion .ubicacion {
+    width: 100%; }
+
 /* Seccion Contacto */
 .formularioContacto {
   height: 100%;
@@ -240,9 +242,12 @@ ul li:hover ul {
   .menuSeccionContacto li a {
     text-decoration: none;
     color: black; }
+  .menuSeccionContacto li ul {
+    background-color: #ffcdd2; }
+    .menuSeccionContacto li ul li {
+      display: block; }
 
 .form-check-input {
-  background-color: #8AC3B8;
   border: #f06292 solid; }
 
 .bodySeccionContacto {
@@ -302,6 +307,12 @@ ul li:hover ul {
     margin-top: 5em;
     margin-bottom: 5em; } }
 
+.botonform {
+  background-color: #f06292; }
+
+.contendedorBotonesFormulario {
+  margin-top: 1em; }
+
 /* Seccion Nosotros*/
 .navSeccionNosotros {
   display: flex;
@@ -321,6 +332,10 @@ ul li:hover ul {
   .menuSeccionNosotros li a {
     text-decoration: none;
     color: black; }
+  .menuSeccionNosotros li ul {
+    background-color: #ffcdd2; }
+    .menuSeccionNosotros li ul li {
+      display: block; }
 
 .contenidoSeccionNosotros {
   height: 40em;
@@ -378,6 +393,10 @@ ul li:hover ul {
   .menuSeccionPedidos li a {
     text-decoration: none;
     color: black; }
+  .menuSeccionPedidos li ul {
+    background-color: #ffcdd2; }
+    .menuSeccionPedidos li ul li {
+      display: block; }
 
 .footerContacto__seccionPedidos a {
   text-decoration: none;
@@ -429,6 +448,10 @@ ul li:hover ul {
   .menuSeccionProductos li a {
     text-decoration: none;
     color: black; }
+  .menuSeccionProductos li ul {
+    background-color: #ffcdd2; }
+    .menuSeccionProductos li ul li {
+      display: block; }
 
 .headerSeccionProductos {
   grid-area: headerSeccionProductos; }
@@ -439,12 +462,21 @@ ul li:hover ul {
   background-color: #fd7070;
   padding: 0px; }
 
+.contendedorImagenProductos {
+  overflow: hidden; }
+
 .imagenesProductos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 3%; }
+
+.card {
+  margin: 1rem; }
+
+.card-body {
+  background-color: pink; }
 
 .imagenesProductos img:hover {
   transform: scale(1.1);
@@ -457,9 +489,6 @@ ul li:hover ul {
   color: white;
   background-color: #f06292; }
 
-.botonCard {
-  background-color: #f06292; }
-
 .titoloSeccionProducto {
   margin-top: 50px;
   order: -2;
@@ -468,7 +497,8 @@ ul li:hover ul {
   text-align: center;
   font-size: 200px;
   font-weight: bold;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+  font-family: "Roboto Mono", monospace;
+  background-color: #fdb1db; }
 
 .footerSeccionProductos {
   color: black;
